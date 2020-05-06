@@ -1,9 +1,8 @@
+const notesData = require("../db/db");
 
-const notesData = require("../db/db")
-
-console.log(notesData);
 module.exports = function(app){
 
+    console.log(notesData);
 
     app.get("/api/notes", function(req,res){
         res.json(notesData);
