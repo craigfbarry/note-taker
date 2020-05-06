@@ -51,6 +51,7 @@ var renderActiveNote = function() {
 
 // Get the note data from the inputs, save it to the db and update the view
 var handleNoteSave = function() {
+  console.log("Save button clicked")
   var newNote = {
     title: $noteTitle.val(),
     text: $noteText.val()
@@ -140,4 +141,5 @@ $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
+console.log("test");
 getAndRenderNotes();
