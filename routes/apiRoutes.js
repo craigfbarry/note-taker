@@ -17,7 +17,18 @@ module.exports = function(app){
 
 
     app.post("/api/notes", function(req,res){
-        notesData.push(req.body);
+        //fs.appendFile("/db/db.json", req, err =>{
+        //    if (err) 
+        //        throw err
+
+        //})
+        fs.readFile('./db/db.json', (err, data)=>{
+            if (err) throw err;
+            let notesData = JSON.parse(data);
+            notesData.push(req.body);
+            console.log("POST data" + notesData);
+        });
+        
     });
 
     app.delete("/api/notes", function(req,res){
