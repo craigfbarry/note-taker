@@ -17,17 +17,19 @@ module.exports = function(app){
 
 
     app.post("/api/notes", function(req,res){
-        //fs.appendFile("/db/db.json", req, err =>{
-        //    if (err) 
-        //        throw err
 
-        //})
-        fs.readFile('./db/db.json', (err, data)=>{
+        let notesData = fs.readFile('./db/db.json', (err, data)=>{
             if (err) throw err;
-            let notesData = JSON.parse(data);
-            notesData.push(req.body);
-            console.log("POST data" + notesData);
+            return JSON.parse(data);
+
+
         });
+        notesData.push(req.body);
+        console.log(notesData);
+        fs.writeFile("./db/db.json", notesData, err =>{
+            if (err) 
+                throw err
+        })
         
     });
 
