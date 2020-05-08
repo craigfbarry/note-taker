@@ -1,5 +1,6 @@
 //const notesData = require("../db/db");
 const fs = require("fs");
+let uniqueID = 1;
 
 module.exports = function(app){
 
@@ -9,28 +10,29 @@ module.exports = function(app){
         fs.readFile('./db/db.json', (err, data)=>{
             if (err) throw err;
             let notesData = JSON.parse(data);
-            res.json(notesData[0]);
-            console.log(notesData);
+            res.json(notesData);
         });
-       
     });
 
 
-    app.post("/api/notes", function(req,res){
+    app.post("/api/notes", function(req,res,uniqueID){
 
-        let notesData = fs.readFile('./db/db.json', (err, data)=>{
+
+        fs.readFile('./db/db.json', (err, data)=>{
             if (err) throw err;
-            return JSON.parse(data);
-
-
+            let postNotesData = JSON.parse(data);
+            console.log(postNotesData);
+            postNotesData.push(req.body);
+            console.log(postNotesData);
         });
-        notesData.push(req.body);
-        console.log(notesData);
-        fs.writeFile("./db/db.json", notesData, err =>{
-            if (err) 
-                throw err
-        })
-        
+        //console.log(postNotesData);
+        //postNotesData.push(req.body);
+        //console.log(postNotesData);
+        //fs.writeFile("./db/db.json", postNotesData, err =>{
+        //    if (err) 
+        //        throw err
+        //})
+        uniqueID++;
     });
 
     app.delete("/api/notes", function(req,res){
