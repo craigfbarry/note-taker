@@ -17,7 +17,7 @@ module.exports = function(app){
 
 
 //Set up the api query routes by the unique id /api/notes/id.
-/*
+
     app.get("/api/notes/:id", function(req,res){
         fs.readFile('./db/db.json', (err, data)=>{
             if (err) throw err;
@@ -30,13 +30,13 @@ module.exports = function(app){
 
 //Display only the element that corresponds to the route entered in the browser.
 
-                if (noteSelection == notes[i].uniqueID){
+                if (noteSelection == notes[i].id){
                     res.json(notes[i])    
                 }                 
             }
         });
     });    
-*/
+
 //-------------------------------------------------------------------------------
 //Set up api to POST data to the file on the server.
 
