@@ -1,6 +1,4 @@
-//const notesData = require("../db/db");
 const fs = require("fs");
-//let uniqueID = 1;
 
 module.exports = function(app){
 
