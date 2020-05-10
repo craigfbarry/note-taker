@@ -1,1 +1,1 @@
-[{"title":"Test Title","text":"Test text"},{"title":"Hello","text":"Posted data"},{"title":"Next Note","text":"Next note in the chain thanks"},{"title":"Testing","text":"Testing before commit"}]
+[{"title":"Test Title","text":"Test text","uniqueID":0},{"title":"New note","text":"Typing up a new note","uniqueID":1},{"title":"And another","text":"sdfefef","uniqueID":2},{"title":"My new note","text":"dfdfdfdf","uniqueID":3}]
