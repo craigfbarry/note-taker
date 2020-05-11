@@ -57,7 +57,6 @@ const handleNoteSave = function() {
   };
 
   saveNote(newNote).then(function(data) {
-    console.log("render page");
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -77,7 +76,6 @@ const handleNoteDelete = function(event) {
   }
 
   deleteNote(note.id).then(function() {
-    console.log("render page");
     getAndRenderNotes();
     renderActiveNote();
   });

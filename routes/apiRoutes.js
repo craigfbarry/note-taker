@@ -59,6 +59,7 @@ module.exports = function(app){
                 console.log("Data POSTED");
             });
         });
+        res.json(true);
     });
 
 //-------------------------------------------------------------------------------
@@ -83,5 +84,6 @@ module.exports = function(app){
             });
 
         });
+        res.json(true);
     });
 }
