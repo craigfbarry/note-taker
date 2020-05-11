@@ -48,9 +48,9 @@ module.exports = function(app){
             postNotesData.push(req.body);
 
 //Add unique identifiers for the data in the file with a new key for each object.            
-            for (let i=0;i<postNotesData.length;i++){
-                postNotesData[i].id = i+1;
-            };
+            postNotesData.forEach((notesArray,i) =>{
+                notesArray.id = i+1;
+            });
 //Stringify the data before writing back to the db file.
 
             let postNotesString = JSON.stringify(postNotesData);
@@ -69,8 +69,8 @@ module.exports = function(app){
             if (err) throw err;
             let deleteSelection = req.params.id;
             let deleteNotesData = JSON.parse(data);
-            deleteNotesData.forEach((element,i) => {
-                if(element.id == deleteSelection){
+            deleteNotesData.forEach((notesArray,i) => {
+                if(notesArray.id == deleteSelection){
                     deleteNotesData.splice(i,1)                    
                 }
                 
