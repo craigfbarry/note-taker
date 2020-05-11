@@ -68,6 +68,7 @@ module.exports = function(app){
     app.delete("/api/notes/:id", function(req,res){
         fs.readFile('./db/db.json', (err, data)=>{
             if (err) throw err;
+
             let deleteSelection = req.params.id;
             let deleteNotesData = JSON.parse(data);
             deleteNotesData.forEach((notesArray,i) => {
