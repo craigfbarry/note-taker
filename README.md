@@ -7,23 +7,23 @@
 *****
 ## <div align="center">Table of Contents</div>
 
-* [Installation](https://github.com/craigfbarry/readme-generator#installation)
+* [Installation](https://github.com/craigfbarry/note-taker#installation)
 
-* [Usage](https://github.com/craigfbarry/readme-generator#usage)
+* [Usage](https://github.com/craigfbarry/note-taker#usage)
 
-* [LIcense](https://github.com/craigfbarry/readme-generator#license)
+* [LIcense](https://github.com/craigfbarry/note-taker#license)
 
-* [Contributing](https://github.com/craigfbarry/readme-generator#contributing)
+* [Contributing](https://github.com/craigfbarry/note-taker#contributing)
 
-* [Tests](https://github.com/craigfbarry/readme-generator#testing-framework)
+* [Tests](https://github.com/craigfbarry/note-taker#testing-framework)
 
-* [Technologies Used](https://github.com/craigfbarry/readme-generator#technologies-used)
+* [Technologies Used](https://github.com/craigfbarry/note-taker#technologies-used)
 
-* [Author](https://github.com/craigfbarry/readme-generator#author)
+* [Author](https://github.com/craigfbarry/note-taker#author)
 
-* [Github URL](https://github.com/craigfbarry/readme-generator#github)
+* [Github URL](https://github.com/craigfbarry/note-taker#github)
 
-* [Acknowledgements](https://github.com/craigfbarry/readme-generator#acknowledgements)
+* [Acknowledgements](https://github.com/craigfbarry/note-taker#acknowledgements)
 
 
 
@@ -48,7 +48,7 @@ None
 
 #### Testing framework
 
-        Jest
+        None
 
 #### Technologies used
 
