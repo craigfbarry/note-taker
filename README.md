@@ -11,7 +11,7 @@
 
 * [Usage](https://github.com/craigfbarry/note-taker#usage)
 
-* [LIcense](https://github.com/craigfbarry/note-taker#license)
+* [License](https://github.com/craigfbarry/note-taker#license)
 
 * [Contributing](https://github.com/craigfbarry/note-taker#contributing)
 
